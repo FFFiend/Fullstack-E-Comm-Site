@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function myfunction() {
+            alert("Nothing here but coming soon!");
+        }
+    </script>
+  <title>My Ecommerce Website</title>
+  <style>
+    /* Add some basic styling for the webpage */
+    body {
+      font-family: sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .product {
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    .product-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .product-description {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .product-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #F00;
+    }
+    .add-to-cart {
+      background-color: #F00;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .bodystyle {
+        background-color: rgb(65,105,225);
+        overflow: scroll
+    }
+    
+  </style>
+</head>
+<body class="bodystyle">
+  <div class="container">
+    <!-- Add a header for the webpage -->
+    <header>
+      <h1 style = "text-align: center">My Ecommerce Website</h1>
+    </header>
+    <form style = "text-align: center">
+        <label for="search">Search:</label>
+        <input type="text" id="search" placeholder="Search...">
+        <button class="add-to-cart">Go</button>
+      </form>
+      
+    <!-- Add a navbar for the webpage -->
+    <nav><button class="add-to-cart" href="https://www.google.com">Home</button>
+         <button class="add-to-cart">Products</button>
+         <button class="add-to-cart">About</button>
+         <button class="add-to-cart">Contact</button>
+    </nav>
+    <!-- Add a section for the products -->
+    <section>
+      <!-- Add a product -->
+      <div class="product">
+        <div class="product-name">Product 1</div>
+        <div class="product-description">This is a description of product 1.</div>
+        <div class="product-price">$100</div>
+        <button onclick = "myfunction()" class="add-to-cart">Add to Cart</button>
+      </div>
+      <!-- Add another product -->
+    </section>
+    <!-- Add a footer for the webpage -->
+    <footer>
+      <p>Copyright 2021 My Ecommerce Website</p>
+    </footer>
+  </div>
+</body>
+</html>
