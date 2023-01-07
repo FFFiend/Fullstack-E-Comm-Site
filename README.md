@@ -10,3 +10,8 @@ Sign up/Log in, Search for products, product pages with reviews and related prod
 ## LATEST TO DO
 Make log in drop down add-on to button, and design sign in page with all the intricacies (user log in, forgot password, etc)
 Link pages to their respective buttons.
+
+
+## LONG TERM GOAL
+The goal with this project is not to display some UI/UX godly talent. It's more to do with writing up a backend, integrating 
+and interacting with a database, and trying to stick to best practices while doing so such that the application is always in a scalable state.
