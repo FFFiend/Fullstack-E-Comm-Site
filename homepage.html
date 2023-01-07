@@ -1,118 +1,27 @@
 <!DOCTYPE html>
 <html>
+  
 <head>
-    <script>
-        function myfunction() {
-            alert("Nothing here but coming soon!");
-        }
-    </script>
-
-    <script>
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET','https://fakestoreapi.com/products/1');
-      xhr.setRequestHeader('Accept', 'application/json');
-      xhr.send();
-
-      xhr.onload = function() {
-        if (xhr.status == 200){
-          var product = JSON.parse(xhr.responseText);
-
-          var productElement = document.createElement('div');
-          var nameElement = document.createElement('h2');
-
-          nameElement.textContent = product.title;
-          nameElement.style = "font-size: 18px"
-          productElement.appendChild(nameElement);
-
-          var productCategory = document.createElement('p');
-          productCategory.textContent = product.category;
-          productCategory.style = "font-size: 15px";
-          productElement.appendChild(productCategory);
-
-        var priceElement = document.createElement('p');
-        priceElement.textContent = '$' + product.price;
-        priceElement.style = "font-weight: bold";
-        productElement.appendChild(priceElement);
-
-        // Set the product image
-        var imageElement = document.createElement('img');
-        imageElement.src = product.image;
-        imageElement.width = "400"
-        imageElement.height = "400"
-        productElement.appendChild(imageElement);
-
-
-        // Add the product element to the page
-        document.body.appendChild(productElement);
-
-        // okay i know how to make ONE, now the thing is, 
-        // I wanna load products by category ON THEIR RESPECTIVE
-        // PAGES, and I want to control how many products per page.
-        // Also, I want the search bar to be able to take you to the
-        // most relevant category..probably some regex and data 
-        // traversal? we'll see.
-        }
-        else{
-          console.error('An error occured' + xhr.status);
-        };
-
-      };
-    </script>
-  <title>My Ecommerce Website</title>
-  <style>
-    /* Add some basic styling for the webpage */
-    body {
-      font-family: 'Times New Roman';
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .product {
-      border: 1px solid #ddd;
-      margin-bottom: 20px;
-      padding: 20px;
-    }
-    .product-name {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .product-description {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-    .product-price {
-      font-size: 18px;
-      font-weight: bold;
-      color: #F00;
-    }
-    .add-to-cart {
-      background-color: #F00;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .bodystyle {
-        background-color: rgb(65,105,225);
-        overflow: scroll
-    }
-    
-  </style>
+  <title>Yep! Another E-Commerce Clone</title>
+  <link rel = "stylesheet" href="css/style.css">
 </head>
+<script src = "js/scripts.js"></script>
+
 <body class="bodystyle">
   <div class="container">
     <!-- Add a header for the webpage -->
     <header>
-      <h1 style = "text-align: center">My Ecommerce Website</h1>
-    </header>
+      <h1 style = "text-align: center">Yep! Another E-Commerce Clone</h1>
+    <div>
     <form style = "text-align: center">
         <label for="search">Search:</label>
         <input type="text" id="search" placeholder="Search...">
         <button class="add-to-cart">Go</button>
       </form>
+    </header>
+    
+    <button class = "signuplogin">Sign Up or Log In</button>
+    </div>
       
     <!-- Add a navbar for the webpage -->
     <nav><button class="add-to-cart" href="https://www.google.com">Home</button>
