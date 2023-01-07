@@ -6,6 +6,51 @@
             alert("Nothing here but coming soon!");
         }
     </script>
+
+    <script>
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET','https://fakestoreapi.com/products/1');
+      xhr.setRequestHeader('Accept', 'application/json');
+      xhr.send();
+
+      xhr.onload = function() {
+        if (xhr.status == 200){
+          var product = JSON.parse(xhr.responseText);
+
+          var productElement = document.createElement('div');
+          var nameElement = document.createElement('h2');
+
+          nameElement.textContent = product.title;
+          nameElement.style = "font-size: 18px"
+          productElement.appendChild(nameElement);
+
+          var productCategory = document.createElement('p');
+          productCategory.textContent = product.category;
+          productCategory.style = "font-size: 15px";
+          productElement.appendChild(productCategory);
+
+        var priceElement = document.createElement('p');
+        priceElement.textContent = '$' + product.price;
+        priceElement.style = "font-weight: bold";
+        productElement.appendChild(priceElement);
+
+        // Set the product image
+        var imageElement = document.createElement('img');
+        imageElement.src = product.image;
+        imageElement.width = "400"
+        imageElement.height = "400"
+        productElement.appendChild(imageElement);
+
+
+        // Add the product element to the page
+        document.body.appendChild(productElement);
+        }
+        else{
+          console.error('An error occured' + xhr.status);
+        };
+
+      };
+    </script>
   <title>My Ecommerce Website</title>
   <style>
     /* Add some basic styling for the webpage */
@@ -81,7 +126,7 @@
     </section>
     <!-- Add a footer for the webpage -->
     <footer>
-      <p>Copyright 2021 My Ecommerce Website</p>
+      <p>Copyright 2023 Owais Ecommerce Website</p>
     </footer>
   </div>
 </body>
