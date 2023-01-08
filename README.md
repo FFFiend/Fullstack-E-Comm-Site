@@ -1,5 +1,5 @@
 # Fullstack-E-Comm-Site
-Self explanatory.
+Just me learning full-stack by iteratively developing this site.
 
 ## API's and Technology
 Use FakeStore API for product data, HTML, CSS, Javascript for Frontend, Backend and Database: TBA, Payment Processing: Stripe?
