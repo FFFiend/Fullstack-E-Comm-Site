@@ -5,7 +5,7 @@ Just me learning full-stack by iteratively developing this site.
 Use FakeStore API for product data, HTML, CSS, Javascript for Frontend, Backend and Database: TBA, Payment Processing: Stripe?
 
 ## Features
-Sign up/Log in, Search for products, product pages with reviews and related products (long term goal, some form of ranking algo?), Payment processing, user authentication.
+Sign up/Log in, Search for products, product pages with reviews and related products (long term goal, some form of ranking algo?), Payment processing, user authentication. Other cool stuff I want to incorporate: load balancer
 
 ## LATEST TO DO
 Link pages together, add user authentication and build out the backend to send and receive user records,
