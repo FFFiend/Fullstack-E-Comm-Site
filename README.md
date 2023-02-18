@@ -7,9 +7,11 @@ Use FakeStore API for product data, React, HTML, CSS, Javascript for Frontend, B
 ## Features
 Sign up/Log in, Search for products, product pages with reviews and related products (long term goal, some form of ranking algo?), Payment processing, user authentication. Other cool stuff I want to incorporate: load balancer
 
-## LATEST TO DO
+## WORKING ON
 Link pages together, add user authentication and build out the backend to send and receive user records,
-i.e. whether they logged in or not, from the database.  USE REACT FOR NICE LOOKING FRONTEND
+i.e. whether they logged in or not, from the database.  
+1) use React for nicer UI
+2) currently doing: design ER relationship for database (MongoDB)
 
 
 ## LONG TERM GOAL
